@@ -1,0 +1,15 @@
+.front_nav{
+    background-color: var(--brand);
+}
+
+.nav-link{
+    color: white;
+
+    &:hover{
+        color: var(--hover);
+    }
+}
+
+.bn{
+    font-family: var(--bn);
+}
