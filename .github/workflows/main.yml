@@ -41,9 +41,12 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          # server: ${{ secrets.FTP_SERVER }}
+          # username: ${{ secrets.FTP_USERNAME }}
+          # password: ${{ secrets.FTP_PASSWORD }}
+          server: ftp.ctgcomputer.com
+          username: uploads@ctgcomputer.com
+          password: R5xDY&w.K#2_
           local-dir: ./  # This points to the build output directory of your Next.js app
           server-dir: /
           protocol: ftp
