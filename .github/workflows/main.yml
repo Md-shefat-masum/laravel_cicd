@@ -48,7 +48,7 @@ jobs:
           username: ctgcompu
           password: q-*l2)$Zj&fd
           local-dir: ./  # This points to the build output directory of your Next.js app
-          server-dir: /home/ctgcompu/ftp
+          server-dir: /home/ctgcompu/ftp/
           # protocol: ftp
           timeout: 600000
 
