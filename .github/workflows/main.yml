@@ -48,5 +48,5 @@ jobs:
           server-dir: /var/www/cicd/
           # protocol: ftp
           port: 22
-          timeout: 600000
+          # timeout: 600000
 
