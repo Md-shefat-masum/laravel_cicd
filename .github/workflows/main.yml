@@ -44,11 +44,12 @@ jobs:
           # server: ${{ secrets.FTP_SERVER }}
           # username: ${{ secrets.FTP_USERNAME }}
           # password: ${{ secrets.FTP_PASSWORD }}
-          server: ctgcomputer.com
-          username: ctgcompu
-          password: q-*l2)$Zj&fd
+          server: 103.213.38.115
+          username: root
+          password: &&$$##V$&%HY
           local-dir: ./  # This points to the build output directory of your Next.js app
-          server-dir: /home/ctgcompu/ftp/
+          server-dir: /var/www/cicd
           # protocol: ftp
+          port: 22
           timeout: 600000
 
