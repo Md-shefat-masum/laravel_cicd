@@ -48,7 +48,7 @@ jobs:
           username: root
           password: &&$$##V$&%HY
           local-dir: ./  # This points to the build output directory of your Next.js app
-          server-dir: /var/www/cicd
+          server-dir: /var/www/cicd/
           # protocol: ftp
           port: 22
           timeout: 600000
