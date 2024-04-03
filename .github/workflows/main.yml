@@ -46,7 +46,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./  # This points to the build output directory of your Next.js app
           server-dir: /test.mnab.info/
-          protocol: sftp
-          port: 21
+          protocol: ftps-legacy
+          port: 2003
           # timeout: 600000
 
