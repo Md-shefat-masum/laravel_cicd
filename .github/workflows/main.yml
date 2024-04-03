@@ -39,14 +39,28 @@ jobs:
       #   run: chmod -R 777 storage bootstrap/cache
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        # uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        # with:
+        #   server: ${{ secrets.FTP_SERVER }}
+        #   username: ${{ secrets.FTP_USERNAME }}
+        #   password: ${{ secrets.FTP_PASSWORD }}
+        #   local-dir: ./
+        #   server-dir: /test.mnab.info/
+        #   protocol: ftp
+        #   port: 21
+        #   timeout: 600000
+
+        # uses: appleboy/ssh-action@master
+        # with:
+        #   host: ${{ secrets.FTP_SERVER }}
+        #   username: ${{ secrets.FTP_USERNAME }}
+        #   key: ${{ secrets.FTP_PASSWORD }}
+        #   port: 2003
+        #   script: "cd /home/mnabinfo/test.mnab.info/ && git pull origin main"
+
+        uses: brunoom1/FTPDeployAction@main
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          hostname: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: /test.mnab.info/
-          protocol: ftp
-          # port: 21
-          # timeout: 600000
 
