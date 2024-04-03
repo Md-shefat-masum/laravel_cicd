@@ -11,7 +11,7 @@
         <li>
             <a href="{{ route('admin') }}"
                 class="sidebar-header">
-                <i class="icon-desktop"></i><span> Dashboard</span>
+                <i class="icon-desktop"></i><span> Dashboard </span>
             </a>
         </li>
         <li>
