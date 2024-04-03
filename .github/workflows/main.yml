@@ -47,6 +47,6 @@ jobs:
           local-dir: ./  # This points to the build output directory of your Next.js app
           server-dir: /var/www/cicd/
           # protocol: ftp
-          port: 22
+          port: 21
           # timeout: 600000
 
