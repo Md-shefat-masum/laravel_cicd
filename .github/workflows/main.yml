@@ -45,10 +45,10 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.0.0
         with:
           ## ctg computer
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ./
+          # server: ${{ secrets.FTP_SERVER }}
+          # username: ${{ secrets.FTP_USERNAME }}
+          # password: ${{ secrets.FTP_PASSWORD }}
+          # server-dir: ./
 
           ## dibbo
           # server: ${{ secrets.DIBBO_SERVER }}
@@ -57,10 +57,10 @@ jobs:
           # server-dir: ./
 
           ## kalyan
-          # server: ${{ secrets.Electro_SERVER }}
-          # username: ${{ secrets.Electro_USERNAME }}
-          # password: ${{ secrets.Electro_PASSWORD }}
-          # server-dir: ./
+          server: ${{ secrets.Electro_SERVER }}
+          username: ${{ secrets.Electro_USERNAME }}
+          password: ${{ secrets.Electro_PASSWORD }}
+          server-dir: ./
 
           local-dir: ./
           protocol: ftp
