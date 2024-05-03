@@ -47,7 +47,7 @@ jobs:
           local-dir: /
           protocol: ftp
           port: 21
-          server-dir: /uploads.ctgcomputer.com/
+          server-dir: /
           # timeout: 600000
 
 
