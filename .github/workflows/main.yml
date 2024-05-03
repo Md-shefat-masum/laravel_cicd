@@ -42,19 +42,19 @@ jobs:
         run: ifconfig
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.3
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /uploads.ctgcomputer.com/
+          server-dir: ./
 
           # server: ${{ secrets.FTP_SERVER }}
           # username: ${{ secrets.FTP_USERNAME }}
           # password: ${{ secrets.FTP_PASSWORD }}
           # server-dir: /assesment.dibyo-bd.com/
 
-          # local-dir: ./
-          # protocol: ftp
-          # port: 21
-          # timeout: 600000
+          local-dir: ./
+          protocol: ftp
+          port: 21
+          timeout: 600000
