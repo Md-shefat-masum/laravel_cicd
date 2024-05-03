@@ -57,9 +57,15 @@ jobs:
           # server-dir: ./
 
           ## kalyan
-          server: ${{ secrets.Electro_SERVER }}
-          username: ${{ secrets.Electro_USERNAME }}
-          password: ${{ secrets.Electro_PASSWORD }}
+          # server: ${{ secrets.ELECTRO_SERVER }}
+          # username: ${{ secrets.ELECTRO_USERNAME }}
+          # password: ${{ secrets.ELECTRO_PASSWORD }}
+          # server-dir: ./
+
+          ## kalyan
+          server: ${{ secrets.REPORT_SERVER }}
+          username: ${{ secrets.REPORT_USERNAME }}
+          password: ${{ secrets.REPORT_PASSWORD }}
           server-dir: ./
 
           local-dir: ./
