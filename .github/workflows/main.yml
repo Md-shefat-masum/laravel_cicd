@@ -14,10 +14,10 @@ jobs:
       - name: Get the latest code
         uses: actions/checkout@v2.3.2
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.2'
+      # - name: Setup PHP
+      #   uses: shivammathur/setup-php@v2
+      #   with:
+      #     php-version: '8.2'
 
       # - uses: actions/setup-node@v3
       #   with:
@@ -45,7 +45,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: /assesment.dibyo-bd.com/
+          server-dir: ./
           protocol: ftp
           port: 21
           # timeout: 600000
