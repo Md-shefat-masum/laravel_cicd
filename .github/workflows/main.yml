@@ -45,8 +45,8 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: /
-          protocol: ftp
-          port: 21
+          # protocol: ftp
+          # port: 21
           # server-dir: /uploads.ctgcomputer.com/
           # timeout: 600000
 
