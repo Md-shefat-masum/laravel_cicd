@@ -35,7 +35,7 @@ jobs:
       # - name: Generate storage link
       #   run: php artisan storage:link
 
-      # - name: Directory Permissions
+      # - name: Directory Permissions s
       #   run: chmod -R 777 storage bootstrap/cache
 
       - name: 📂 Sync files
